@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Academia Conquer Blocks</title>
+    <meta name="Academia ConquerBlocks" content="formulario contacto">
+    <meta name="author" content="Jesus">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#1e7bbf">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        
+        <figure>
+            <a href="index.html"><img  src="img/logo-conquerblocks.png" alt="logo conquer blocks"></a>
+        </figure>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a class="off" href="index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Nosotros</a></li>
+                <li class="desplegable">
+                    <details>
+                        <summary>Formaciones</summary>
+
+                        <ul class="submenu">
+                            <li><a href="curso-full-stack.html">Master Full-Stack</a></li>
+                            <li><a href="curso-ia.html">Master I.A</a></li>
+                            <li><a href="curso-block-chain.html">Master Block-Chain</a></li>
+                            <li><a href="curso-ciberseguridad.html">Master CiberSeguridad</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="list">Contacto</a></li>
+            </ul>
+            <div class="auth">
+                <a href="registro.html" class="btn">Registro</a>
+                <a href="login.html" class="btn-2">Login</a>        
+            </div>
+        </nav>
+           
+    </header>
+
+    <main class="main-contact">
+        
+        <section class="contact">
+            <h1>Contacto</h1>
+
+            <div class="contact-info">
+                
+                <div class="ct-info">
+                    <div class="ct-img">
+                        <img src="img/logos/whatssap.png" alt="">
+                    </div>
+                    <div class="ct-txt">
+                        <h3>WhatssApp</h3>
+                        <p>+34 123 456 789 </p>
+                    </div>
+                </div>
+                <div class="ct-info">
+                    <div class="ct-img">
+                        <img src="img/logos/email.png" alt="">
+                    </div>
+                    <div class="ct-txt">
+                        <h3>E-mail</h3>
+                        <p>info@conquerblocks.com </p>
+                    </div>
+                </div>
+                <div class="ct-info">
+                    <div class="ct-img">
+                        <img src="img/logos/map.png" alt="">
+                    </div>
+                    <div class="ct-txt">
+                        <h3>Dirección</h3>
+                        <p>16192 , Delaware, USA </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-map">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.3999191444177!2d-75.21428739065074!3d38.76516055438135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b90d93fd3829%3A0x2b879eb839193dd6!2s16192%20Coastal%20Hwy%2C%20Lewes%2C%20DE%2019958%2C%20EE.%20UU.!5e1!3m2!1ses!2ses!4v1794850541110!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="info-form">
+                <h2>Envíanos un mensaje</h2>
+                <p>
+                    <strong>¿Tienes alguna duda o necesitas más información? </strong>
+                    Rellena el formulario y nuestro equipo se pondrá en contacto contigo lo antes posible. 
+                    <strong>¡Da el primer paso hacia tu futuro en tecnología!</strong>
+                </p>
+            </div>
+      
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Nombre"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="tucorreo@example.com"
+                        required
+                    >
+                    <img src="./img/logos/alert.svg" alt="" class="error-icon" aria-hidden="true">
+                    <span class="error-message">Formato de correo invalido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Escribe tu mensaje"
+                        rows="10"
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="btn-forms" type="submit">Contáctanos</button>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>© Academia Conquer Blocks 2026 - </p>
+        <p>Ejercicio web de la Academia</p>
+        <a href="aviso-legal.html">Aviso Legal</a>
+    </footer>
+</body>
+
+</html>

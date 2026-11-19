@@ -1,0 +1,16 @@
+.f-hero{
+    .sub-hero{
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+}
+.f-info{
+    @include tablet{
+        p{
+            margin: 0;
+        }
+    }
+}

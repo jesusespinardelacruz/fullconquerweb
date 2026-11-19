@@ -1,0 +1,184 @@
+
+//HERO
+
+
+
+.hero-aboutus {
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    background-image: url("../img/pixel.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 140% -10%;
+    
+   
+}    
+.inter-hero{
+        
+        background-color: rgba(255, 255, 255, 0.751);
+        padding: 20px;
+        border-radius: 25px;
+        h1{
+            margin-bottom: 20px;
+            line-height: 1;
+            &::after {
+                content: "";
+                display: block;
+                width: 100px;              
+                height: 3px;              
+                background-color:orange; 
+                margin: 10px 120px 0;      
+                border-radius: 5px; 
+            
+            
+            }
+        }    
+        p{
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+    @include desktop{
+        background-color: transparent;
+        h1{
+            color: $color-primary;
+            &::after{
+                background-color: transparent;
+            }
+        }
+        p{
+            color: white;
+            width: 70%;
+            padding-left: 15px;
+        }
+    }
+
+}
+
+            
+    
+    
+
+.equipo-docente{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+.profesores {
+    margin: 10px 0px;
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.682);
+    padding: 30px 20px;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+    @include desktop{
+        background-color: white;
+    }
+
+    figure {
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 200px;
+        margin: 0 auto; 
+        border-radius: 50%;
+        overflow: hidden; 
+        background-image: linear-gradient(to bottom, orange 60% 0%, yellow);
+
+        img {
+            
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            
+        }
+        @include desktop{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .name-profesor{
+        h2 {
+            margin-top: 10px;
+            @include desktop{
+                font-size: 25px;
+            }
+          
+            
+        }
+        p{
+            color: orange;
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            &::after {
+                content: "";
+                display: block;
+                width: 60px;              
+                height: 3px;              
+                background-color:orange; 
+                margin: 10px auto 0;      
+                border-radius: 5px;       
+
+            }
+            @include desktop {
+                font-size: 10px;
+                color: $color-text;
+            }
+        }
+    }    
+    .bio-profesor{
+        p{
+            padding: 0 30px;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            @include tablet{
+                padding: 0 15px;
+            }
+            @include desktop{
+                padding: 0 10px;
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 30px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+
+    border-radius: 50%;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+@include tablet{
+        margin-top: auto;
+    }
+
+}
+.text-aboutus{
+    display: none;
+}
+    
+       
+   

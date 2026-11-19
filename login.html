@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión | Academia Conquer Blocks</title>
+    <meta name="Academia ConquerBlocks" content="Log in ConquerBlocks">
+    <meta name="author" content="Jesus">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#1e7bbf">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        
+        <figure>
+            
+            <a href="index.html"><img  src="img/logo-conquerblocks.png" alt="logo conquer blocks"></a>
+        </figure>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a class="off" href="index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Nosotros</a></li>
+                <li class="desplegable">
+                    <details>
+                        <summary>Formaciones</summary>
+
+                        <ul class="submenu">
+                            <li><a href="curso-full-stack.html">Master Full-Stack</a></li>
+                            <li><a href="curso-ia.html">Master I.A</a></li>
+                            <li><a href="curso-block-chain.html">Master Block-Chain</a></li>
+                            <li><a href="curso-ciberseguridad.html">Master CiberSeguridad</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="list">Contacto</a></li>
+            </ul>
+            <div class="auth">
+                <a href="registro.html" class="btn">Registro</a>
+                <a href="login.html" class="btn-2">Login</a>        
+            </div>
+        </nav>
+           
+    </header>
+
+
+    <main class="main-login">
+        <section class="hero-login">
+            <div class="img-form">
+                <img src="img/logos/login.png" alt="">
+
+            </div>
+            <div class="info-hero-login">
+                <h1>Iniciar sesión</h1>
+                <p>Inicia sesión en nuestra plataforma para acceder a todos tus
+                Máster y Cursos.
+                </p>
+            </div>
+            
+        </section>
+        
+        
+        <section class="form">
+            
+            
+
+            <form class="contact-form" action="/login" method="post">
+
+                <div class="form-group">
+                    <label for="login-email"></label>
+                    <p>
+                        E-MAIL
+                    </p>
+                
+                    <input
+                        type="email"
+                        id="login-email"
+                     name="email"
+                        placeholder="Introduce tu E-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password"></label>
+                    <p>
+                        CONTRASEÑA
+                    </p>
+                
+               
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        placeholder="Introduce tu contraseña"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <button class="btn-forms" type="submit">Iniciar sesión</button>
+                </div>
+
+                <div class="count-ok">
+                    <p>
+                        ¿Aún no tienes una cuenta? 
+                    </p>
+                
+                    <a id="btn-register" class="btn" href="registro.html">Regístrate aquí ↗</a>
+                </div>
+
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>© Academia Conquer Blocks 2026 - </p>
+        <p>Ejercicio web de la Academia</p>
+        <a href="aviso-legal.html">Aviso Legal</a>
+    </footer>
+</body>
+
+</html>

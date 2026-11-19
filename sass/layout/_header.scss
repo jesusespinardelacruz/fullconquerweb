@@ -1,0 +1,318 @@
+
+//MOBILE & TABLET
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+
+    figure {
+        margin: 0;
+        width: 160px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0 15px 0 15px;
+        }
+    }
+
+    // Checkbox oculto
+    .menu-toggle {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    // Botón hamburguesa
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        justify-self: end;
+
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: $color-title;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+    }
+
+    // Menú cerrado
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        z-index: 100;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        background-image: url("../img/pixel.svg");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 10% 50%;
+
+        ul {
+            background-color: rgba(255, 255, 255, 0.751);
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            gap: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+            text-align: right;
+            margin: 0;
+
+            li {
+                .off {
+                    display: none;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $secondary-font;
+                    font-size: 18px;
+                    color: $color-title;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+
+        .desplegable {
+            details {
+                summary {
+                    cursor: pointer;
+                    font-family: $secondary-font;
+                    font-size: 18px;
+                    color: $color-title;
+                    font-weight: 600;
+                    &::-webkit-details-marker {
+                        display: none;
+                    }
+
+                    &::marker {
+                        content: "";
+                    }
+
+                    // Nueva flecha fina
+                    &::after {
+                        content: "›";
+                        font-size: 25px;
+                        font-weight: 300;
+                        margin-left: 8px;
+                        display: inline-block;
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                // Girar flecha al abrir
+                &[open] summary::after {
+                    transform: rotate(90deg);
+                }
+            
+
+                .submenu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 8px;
+                    padding: 10px 0 0;
+                    margin: 0;
+                    list-style: none;
+                    background-color: transparent;
+                }
+
+                li {
+                    a {
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }   
+    
+
+
+        .auth {
+            background-color: rgba(255, 255, 255, 0.751);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            padding-bottom: 10px;
+            padding-right: 50px;
+        }
+    }
+
+    // Mostrar menú
+    .menu-toggle:checked ~ nav {
+        display: block;
+    }
+
+    // Animación hamburguesa a X
+    .menu-toggle:checked + .menu-icon {
+
+        span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+        }
+
+        span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+
+    
+}
+
+// HEADER DESKTOP
+@include desktop{
+    .header{
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        padding: 1rem 2rem;
+        height: auto;
+        figure{
+            width: 250px;
+
+        }
+
+  
+        .menu-toggle,
+        .menu-icon {
+            display: none;
+        }
+
+   
+        nav,
+        .menu-toggle:checked ~ nav {
+            display: flex;
+            position: static;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        nav {
+            justify-content: right;
+            
+            > ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
+                padding: 0;
+                margin: 0;
+                background: transparent;
+                text-align: left;
+
+                > li > a {
+                    position: relative;
+                    display: inline-block;
+                    width: max-content;
+                    line-height: 0;
+
+                    font-size: 16px;
+                    padding: 0 0 8px;
+
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+                .desplegable{
+                    position: relative;
+                    details{
+                        summary{
+                            font-size: 16px;
+                            
+                            &:after{
+                                font-size: 16px;
+                                color: $color-primary;
+                            }
+                        }
+                    }
+
+                }
+                .submenu {
+                    position: absolute;
+                    top: calc(100% + 10px);
+                    padding: 15px;
+                    place-items: center center;
+                    border-radius: 0 25px;
+                    z-index: 200;
+                    width: 200px;
+                    li{
+                        background-color: white;
+                        padding: 15px 10px;
+                        border-radius: 15px;
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+                        
+                        
+                        a{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .auth {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                padding: 0;
+                .btn{
+                    font-size: 18px;
+                    box-shadow: none;
+                    color: $color-primary;
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        color: $color-title;
+                    }
+                    
+                    
+                }
+                .btn-2{
+                    background-color: $color-title;
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        background-color: transparent;
+                        color: $color-title;
+                    }
+                }
+            }
+        }
+    }
+}

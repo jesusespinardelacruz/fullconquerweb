@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario | Academia Conquer Blocks</title>
+    <meta name="Academia ConquerBlocks" content="Equipo ConquerBlocks">
+    <meta name="author" content="Jesus">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#1e7bbf">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        
+        <figure>
+            
+            <a href="index.html"><img  src="img/logo-conquerblocks.png" alt="logo conquer blocks"></a>
+        </figure>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a class="off" href="index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Nosotros</a></li>
+                <li class="desplegable">
+                    <details>
+                        <summary>Formaciones</summary>
+
+                        <ul class="submenu">
+                            <li><a href="curso-full-stack.html">Master Full-Stack</a></li>
+                            <li><a href="curso-ia.html">Master I.A</a></li>
+                            <li><a href="curso-block-chain.html">Master Block-Chain</a></li>
+                            <li><a href="curso-ciberseguridad.html">Master CiberSeguridad</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="list">Contacto</a></li>
+            </ul>
+            <div class="auth">
+                <a href="registro.html" class="btn">Registro</a>
+                <a href="login.html" class="btn-2">Login</a>        
+            </div>
+        </nav>
+           
+    </header>
+
+    <main class="main-register">
+
+        <section class="hero-register">
+            <div class="img-form">
+                <img src="img/logos/register.png" alt="">
+
+            </div>
+            <div class="info-hero-register">
+                <h1>Registro de usuario</h1>
+                <p>
+                    <strong>¿Aún no estás registrado en nuestra plataforma?</strong>
+                </p>
+                <p>
+                    Regístrate para acceder a nuestra oferta Académica.
+                </p>
+            </div>
+
+
+        </section>
+    
+            
+        <section class="form">
+            
+
+            <form class="contact-form" action="#" method="post"
+                  enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <p>
+                        Nombre & Apellidos
+                    </p>
+                    
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="..."
+                            
+                        required
+                        >
+                </div>
+
+                <div class="form-group"> 
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <p>
+                        Fecha de nacimiento
+                    </p>
+                    
+                    <input
+                        type="date"
+                        id="nacimiento"
+                        name="fecha_nacimiento"
+                        required
+                    >
+                </div>
+
+           
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <p>
+                        Correo Eléctronico
+                    </p>
+                    
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="tucorreo@example.com"
+                        required
+                    >
+                    <img src="./img/logos/alert.svg" alt="" class="error-icon" aria-hidden="true">
+                    <span class="error-message">Formato de correo invalido</span>
+                </div>
+
+            
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <p>
+                        Dirección
+                    </p>
+                    
+                    <input
+                        type="text"
+                        id="direccion"
+                        name="direccion"
+                        autocomplete="street-address"
+                        placeholder="calle, nº casa, ciudad, provincia, país.."
+                    >
+                </div>
+
+            
+                <div class="form-group">
+                    <label for="web">Página web:</label>
+                    <p>
+                        Página web:
+                    </p>
+                        
+                    <input
+                        type="url"
+                        id="web"
+                        name="web"
+                        placeholder="https://www.ejemplo.com"
+                    >
+                </div>
+
+           
+                <div class="form-group" id="photo-label">
+                    <label for="foto">Fotografía:</label>
+                    <p>Adjunta una foto tuya;</p>
+                    <input
+                        type="file"
+                        id="foto"
+                        name="foto"
+                        accept="image/*"
+                    >
+                </div>
+
+            
+                <div class="form-group">
+                    <label for="biografia">Biografía:</label>
+                    <p>
+                        Cuéntanos sobre ti:
+                    </p>
+                        
+                    <textarea
+                        id="biografia"
+                        name="biografia"
+                        rows="5"
+                        cols="40"
+                        placeholder="..."
+                        ></textarea>
+                </div>
+
+                
+
+                <div>
+                    <button  class="btn-forms" type="submit">Registrarse</button>
+                </div>
+
+                <div class="count-ok">
+                    <p>
+                        ¿Ya tienes una cuenta?
+                    </p>
+                    
+                    <a class="btn" href="login.html">Iniciar sesión ↗</a>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>© Academia Conquer Blocks 2026 - </p>
+        <p>Ejercicio web de la Academia</p>
+        <a href="aviso-legal.html">Aviso Legal</a>
+    </footer>
+</body>
+
+</html>

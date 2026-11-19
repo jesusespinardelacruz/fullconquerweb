@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="SVG del Máster en Desarrollo Full Stack, estilo claro">
+<defs>
+<linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffad4d"/><stop offset="1" stop-color="#f26b21"/></linearGradient>
+<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#181818" opacity=".10"/></pattern>
+</defs>
+<rect x="250" y="230" width="460" height="200" rx="24" fill="none" stroke="#181818" stroke-width="5"/>
+<path d="M405 300 l-64 56 64 56 M555 300 l64 56 -64 56" fill="none" stroke="#181818" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M515 270 l-48 172" stroke="#f26b21" stroke-width="18" stroke-linecap="round"/>
+<rect x="300" y="460" width="360" height="16" rx="8" fill="#f26b21" opacity=".24"/>
+<circle cx="692" cy="248" r="26" fill="url(#orangeGrad)" opacity=".18"/>
+
+<text x="480" y="604" fill="#181818" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2" text-anchor="middle">MÁSTER EN DESARROLLO FULL STACK</text>
+<text x="480" y="635" fill="#5a5a5a" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="middle">Frontend · Backend · APIs · Bases de datos</text>
+</svg>

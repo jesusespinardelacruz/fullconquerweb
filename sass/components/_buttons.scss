@@ -1,0 +1,106 @@
+
+.btn {
+    font-family: $principal-font;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    color: $color-title;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
+    @include desktop {
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 7px;
+            left: 15px;
+            right: 15px;
+            height: 2px;
+            background-color: $color-primary;
+
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            box-shadow: 0 12px 20px rgba(37, 99, 235, 0.3);
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+
+.btn-2 {
+    font-family: $principal-font;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: $color-primary;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: 
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
+    @include desktop {
+        font-size: 15px;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            box-shadow: 0 12px 20px rgba(37, 99, 235, 0.3);
+        }
+    }
+}
+
+.btn-forms {
+    appearance: none;
+    background: $color-title;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 0;
+    font-family: $principal-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: $color-primary;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-primary;
+        outline-offset: 4px;
+    }
+}

@@ -1,0 +1,12 @@
+@include desktop{
+    .aviso-legal{
+        background-image: url("../img/bg-theme.png");
+       > main >div{
+        hr{
+            margin: 30px 0;
+            
+        }
+       } 
+    }
+
+}

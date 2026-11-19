@@ -1,0 +1,145 @@
+
+//HERO
+
+.hero-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    h1{
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        &::after {
+            content: "";
+            display: block;
+            width: 90px;              
+            height: 3px;              
+            background-color:orange; 
+            margin: 10px auto 0;      
+            border-radius: 5px;      
+        }
+    }
+    p{
+        text-align: center;
+        @include tablet{
+            font-weight: 500;
+            font-size: 24px;
+            color: $color-primary;
+
+        }
+    }
+    .welcome-blog{
+        display: none;
+        @include tablet{
+            display: block;
+            font-weight: 300;
+            font-size: 20px;
+            color: $color-title;
+        }
+    }
+    @include desktop{
+        h1{
+            color: $color-primary;
+            &::after{
+                background-color: $color-bg-trans;
+                width: 80%;
+            }
+        }
+            
+        p, .welcome-blog{
+            color:white;
+        }
+        .welcome-blog{
+            font-size: 15px;
+            width: 60%;
+        }
+
+    }
+}
+
+//SECCION NOTICIAS
+
+.grid-blog{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+
+    .notice{
+        border-radius: 25px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+        }
+        .img-notice{ 
+            width: 100%;
+            height: 200px;
+            img{
+                border-radius: 25px 25px 0 0;
+                 object-fit: cover;
+                 width: 100%;
+                 height: 200px;
+                
+            }   
+
+        }
+        .txt-notice{
+            padding: 20px;
+
+            p{
+                margin-top: 10px;
+            }
+            .time-blog{
+                font-size: 12px;
+            }
+            
+            .btn-blog{
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+            }
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                h2{
+                    font-size: 30px;
+                }
+                .btn-blog{
+                    margin-top: auto;
+                    a{
+                        margin: 0;
+                    }
+                    
+                }
+            }
+
+
+        }
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+        place-items: top center;
+        .notice{
+            width: 350px;
+            height: auto;
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 14px;
+            }
+
+
+        }
+    }
+    
+}

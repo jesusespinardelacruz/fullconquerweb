@@ -1,0 +1,47 @@
+
+h1{
+    font-family: $principal-font;
+    font-size: 44px;
+    color: $color-title;
+    font-weight: 900;
+    
+    @include tablet{
+        font-size: 77px;
+    }
+}
+
+h2{
+    font-family: $principal-font;
+    font-size: 32px;
+    font-weight: 900;
+
+    @include tablet{
+        font-size: 50px;
+    }
+}
+
+h3{
+    font-family: $principal-font;
+    font-size: 24px;
+    font-weight: 600;
+
+    @include tablet{
+        font-size: 32px;
+    }
+}
+
+p{
+    font-family: $secondary-font;
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+
+    @include tablet{
+        font-size: 18px;
+    }
+    @include desktop{
+        font-size: 16px;
+    }
+}

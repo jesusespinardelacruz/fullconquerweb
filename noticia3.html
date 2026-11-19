@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 19.3 | Conquer Blog</title>
+    <meta name="Academia ConquerBlocks" content="blog Conquer Blocks">
+    <meta name="author" content="Jesus">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#1e7bbf">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        
+        <figure>
+            
+            <a href="index.html"><img  src="img/logo-conquerblocks.png" alt="logo conquer blocks"></a>
+        </figure>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a class="off" href="index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Nosotros</a></li>
+                <li class="desplegable">
+                    <details>
+                        <summary>Formaciones</summary>
+
+                        <ul class="submenu">
+                            <li><a href="curso-full-stack.html">Master Full-Stack</a></li>
+                            <li><a href="curso-ia.html">Master I.A</a></li>
+                            <li><a href="curso-block-chain.html">Master Block-Chain</a></li>
+                            <li><a href="curso-ciberseguridad.html">Master CiberSeguridad</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="list">Contacto</a></li>
+            </ul>
+            <div class="auth">
+                <a href="registro.html" class="btn">Registro</a>
+                <a href="login.html" class="btn-2">Login</a>        
+            </div>
+        </nav>
+           
+    </header>
+
+
+    <main class="noticia-blog">
+        <div class="back-to-blog">
+            <a class="btn"  href="blog.html">← Volver al Blog</a>
+        </div>
+        <article>
+
+            <header class="header-noticia">
+                <p class="etiquetas">
+                   Desarrollo Web | Herramientas | Desarrollo Full Stack
+                </p>
+
+                <h2>
+                    React 19.3 hace más fluidas las interfaces web con nuevas transiciones visuales
+                </h2>
+
+                    
+                
+
+                <div class="img-noticia">
+                    <img
+                        src="img/01-react-19-3.webp"
+                        alt="react-19.3"
+                    >
+                </div>
+
+                <div class="info-autor">
+
+                    <div class="img-autor">
+                        <img src="img/conquer-guy.png" alt="">
+                    </div>
+
+                    <div class="txt-autor">
+                        <p class="name-autor">Conquer Guy</p>
+                        <p class="fecha-noticia">
+                            Publicado el
+                            <time datetime="2026-11-15">
+                            10 de noviembre de 2026
+                            </time>
+                        </p>
+                    </div>
+                    
+                </div>
+          
+            </header>
+
+            <p class="txt-border-blog">
+                <strong>
+                    La actualización incorpora como funciones estables View Transitions y Fragment Refs, y amplía las
+                     posibilidades de crear aplicaciones más dinámicas sin complicar el DOM.
+                </strong>
+            </p>
+
+            <section class="inter-noticia">
+
+                <p>
+                    React 19.3, publicado el 9 de septiembre de 2026, incorpora nuevas herramientas para <strong> mejorar
+                    las animaciones</strong>
+                    y la interacción en aplicaciones web. La versión estabiliza View Transitions y Fragment Refs e introduce mejoras relacionadas con la ejecución en el navegador y los Trusted Types.
+                    <span></span>
+                    Las aplicaciones web ya no compiten únicamente por mostrar información: también necesitan ofrecer experiencias rápidas, comprensibles y agradables. En ese contexto, el equipo de React 
+                    publicó la versión 19.3 de su biblioteca de interfaces, con novedades destinadas a <strong>facilitar la construcción de componentes</strong> más expresivos y adaptables.
+                    <span></span>
+                    Uno de los cambios destacados es la estabilización de <strong>View Transitions</strong>, una funcionalidad que permite animar elementos cuando aparecen, desaparecen, 
+                    cambian de posición o modifican su tamaño. Hasta ahora, conseguir este tipo de efectos podía requerir librerías adicionales o soluciones específicas para cada componente. Con la nueva API, 
+                    React se coordina con la tecnología de transiciones visuales del navegador para ofrecer un punto de partida más integrado.
+
+                </p>
+
+            </section>
+
+            <section class="inter-noticia">
+                <h3>Animaciones que ayudan a entender la interfaz</h3>
+
+                <p>
+                    Una transición bien aplicada no es solamente un detalle estético. Puede ayudar al usuario a seguir el recorrido de una tarjeta que se expande, comprender el cambio entre dos vistas o identificar
+                    el elemento que se acaba de actualizar. En un panel de administración, por ejemplo, pasar de una lista de clientes a la ficha de uno de ellos puede resultar más natural si la interfaz conserva cierta continuidad visual.
+                    <span></span>
+                    Esto no significa que todas las pantallas deban animarse. Las buenas prácticas siguen siendo fundamentales: evitar efectos excesivos, respetar las preferencias de movimiento reducido y
+                    medir el rendimiento en dispositivos modestos.
+                </p>
+
+
+            </section>
+
+            <section class="inter-noticia">
+                <h3>Fragment Refs: más control, menos elementos innecesarios</h3>
+
+                <p>
+                    La otra novedad importante es la llegada de <strong>Fragment Refs como API estable.</strong> Permite trabajar con los elementos DOM contenidos
+                    dentro de un fragmento sin obligar a introducir un contenedor adicional. Esta capacidad facilita operaciones relacionadas con el foco, 
+                    la observación del tamaño o la posición y determinados eventos, especialmente en componentes reutilizables.
+                    <span></span>
+                    React 19.3 también incorpora otras mejoras, entre ellas la <strong>API `browser()`</strong> y una integración más adecuada con Trusted Types, 
+                    una característica de seguridad del navegador relacionada con la prevención de ciertos ataques de inyección en el DOM. Su presencia 
+                    no sustituye la validación de datos ni una política de seguridad bien diseñada.
+
+
+                </p>
+            </section>
+
+            <section class="inter-noticia">
+                <h3>Qué deben hacer ahora los desarrolladores</h3>
+
+                <p>
+                    Para quienes trabajan con React, la recomendación no es actualizar a ciegas. 
+                    <span></span>
+                    Conviene revisar la compatibilidad de las dependencias, 
+                    probar las nuevas APIs en un entorno controlado y verificar el comportamiento del teclado, los lectores de pantalla y el diseño responsive. 
+                    En productos existentes, un buen primer experimento puede ser la transición entre dos vistas de un dashboard.
+                </p>
+            </section>
+
+
+            <section class="inter-noticia">
+                <h3>Conclusión:</h3>
+
+                <p class="txt-border-blog">
+                    <strong>
+                        React 19.3 demuestra que la evolución del frontend también pasa por mejorar 
+                        la experiencia de uso y la composición de componentes. Más que añadir efectos por añadir, las nuevas herramientas permiten construir 
+                        interfaces más claras, accesibles y fáciles de mantener.
+                    </strong>
+                </p>
+            </section>
+            
+
+            <footer class="footer-noticia">
+                <p >
+                    #Programación #Herramientas
+                    #DesarrolloWeb #ConquerBlocks
+                </p>
+            </footer>
+
+        </article>
+        <div class="back-to-blog" >
+            <a class="btn" href="blog.html">← Volver al Blog</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Academia Conquer Blocks 2026 - </p>
+        <p>Ejercicio web de la Academia</p>
+        <a href="aviso-legal.html">Aviso Legal</a>
+    </footer>
+
+    
+
+</body>
+
+</html>
