@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="SVG del Máster en Inteligencia Artificial, estilo oscuro">
+<defs>
+<linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffad4d"/><stop offset="1" stop-color="#f26b21"/></linearGradient>
+
+</defs>
+<rect width="960" height="720" fill="#101114"/>
+<g opacity=".27" stroke="#55565c" stroke-width="1"><path d="M0 110 H960 M0 250 H960 M0 390 H960 M0 530 H960 M0 670 H960"/><path d="M120 0 V720 M300 0 V720 M480 0 V720 M660 0 V720 M840 0 V720"/></g>
+<circle cx="480" cy="308" r="240" fill="none" stroke="#f26b21" opacity=".18" stroke-width="2"/>
+<circle cx="480" cy="308" r="180" fill="none" stroke="#f26b21" opacity=".18" stroke-width="2"/>
+<rect x="162" y="94" width="636" height="470" rx="36" fill="#1d1e21" stroke="#494a50" stroke-width="3.5"/>
+
+<circle cx="480" cy="324" r="130" stroke="#f26b21" fill="none" stroke-width="4"/>
+<g stroke="#ffffff" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M393 318 L452 255 L517 283 L567 231"/><path d="M393 318 L444 384 L513 365 L567 417"/><path d="M452 255 L444 384 M517 283 L513 365 M567 231 L567 417"/></g>
+<g fill="#f26b21" stroke="#f26b21" stroke-width="2"><circle cx="393" cy="318" r="14"/><circle cx="452" cy="255" r="14"/><circle cx="517" cy="283" r="14"/><circle cx="567" cy="231" r="14"/><circle cx="444" cy="384" r="14"/><circle cx="513" cy="365" r="14"/><circle cx="567" cy="417" r="14"/></g>
+<path d="M365 476 H595" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+
+<text x="480" y="604" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2" text-anchor="middle">MÁSTER EN IA</text>
+<text x="480" y="635" fill="#c9c9c9" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="middle">Machine Learning · Automatización · Datos</text>
+</svg>
